@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rich_logger"
+version = "1.0.0"
+description = "Custom Rich-enhanced logger with semantic logging methods for Python analytics and automation workflows."
+authors = [
+  { name="Aidan Calderhead", email="aidan.calderhead@gmail.com" }
+]
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.11"
+dependencies = ["rich>=13.0"]
+
+[project.urls]
+"Homepage" = "https://github.com/acalderhead/rich-logger"
+"Issues" = "https://github.com/acalderhead/rich-logger/issues"
