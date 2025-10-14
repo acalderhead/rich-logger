@@ -59,9 +59,11 @@ Example usage can be found in the [test file](https://github.com/acalderhead/ric
 
 ---
 
-| Version    | Date       | Notes                                             |
-| ---------- | ---------- | ------------------------------------------------- |
-| **v1.0.0** | 2025-10-14 | Initial public release with stable core semantics |
+| Version    | Date       | Notes                                                      |
+| ---------- | ---------- | ---------------------------------------------------------- |
+| **v1.0.0** | 2025-10-14 | Initial public release with stable core semantics          |
+| **v1.0.1** | 2025-10-14 | Updated installation instructions given successful release |
+| **v1.0.2** | 2025-10-14 | Updated README.md version history to v1.0.1 and v1.0.2     |
 
 ---
 
