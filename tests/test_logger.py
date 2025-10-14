@@ -3,6 +3,7 @@
 # ─────────────────────────────────────────────────────────────────────────────
 
 import pytest
+from time import sleep
 from rich_logger.rich_logger import RichLogger
 
 
@@ -17,11 +18,13 @@ def test_logger_execution(capsys):
     logger.config("Mode: test | Threshold=10")
     logger.meta("Dataset: sample_data.csv | Records=5")
     logger.read("Loading dataset")
+    sleep(1)
 
     # Iterative Processing
     logger.stage("Validating data")
-    sample_data = [4, 12, 8, 15, 3]
+    sample_data = [4, 12, 15]
     accepted = []
+    sleep(1)
 
     for i, value in enumerate(sample_data, start=1):
         logger.step(f"Record {i}: {value}")
@@ -35,11 +38,14 @@ def test_logger_execution(capsys):
             logger.substep("Below threshold")
             logger.warning(f"{value} ignored")
 
+        sleep(1)
+
     # Metrics and Outputs
     ratio = len(accepted) / len(sample_data)
     ignored = len(sample_data) - len(accepted)
     logger.metric(f"accepted={len(accepted)} ignored={ignored} ratio={ratio:.2f}")
     logger.info("Validation done")
+    sleep(1)
 
     # Final Computation
     try:
@@ -51,6 +57,8 @@ def test_logger_execution(capsys):
     except Exception as e:
         logger.error(f"Failure: {e}")
         logger.debug("ZeroDivisionError test")
+
+    sleep(1)
 
     logger.alert("Run completed with handled exception")
 
