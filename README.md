@@ -33,7 +33,7 @@ Install dependency: rich ≥ 13.0
 pip install rich
 ```
 
-Install package: rich_logger ≥ 1.0.0 (or clone module directly)
+Install module: rich_logger ≥ 1.0.0 (or clone module directly)
 
 ```bash
 pip install git+https://github.com/acalderhead/rich-logger.git@v1.0.1#egg=rich_logger
