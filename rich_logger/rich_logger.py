@@ -27,6 +27,11 @@ Note
     The logger methods are generated dynamically, making it easy to add, 
     remove, or modify log semantics without altering the core class.
 
+Installation
+────────────
+    pip install
+    git+https://github.com/acalderhead/rich-logger.git@v1.0.1#egg=rich_logger
+
 Usage
 ─────
     # Import and instantiate
