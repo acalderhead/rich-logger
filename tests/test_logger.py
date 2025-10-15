@@ -3,8 +3,8 @@
 # ─────────────────────────────────────────────────────────────────────────────
 
 import pytest
-from time import sleep
-from rich_logger.rich_logger import RichLogger
+from time        import sleep
+from rich_logger import RichLogger
 
 
 def test_logger_execution(capsys):
