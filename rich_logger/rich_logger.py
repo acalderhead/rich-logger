@@ -30,7 +30,7 @@ Note
 Installation
 ────────────
     pip install
-    git+https://github.com/acalderhead/rich-logger.git@v1.0.1#egg=rich_logger
+    git+https://github.com/acalderhead/rich-logger.git@v1.0.4#egg=rich_logger
 
 Usage
 ─────
@@ -96,7 +96,7 @@ class RichLogger:
             "color": "magenta", 
             "level": logging.INFO
         },
-        "meta": {
+        "metadata": {
             "label": "METADATA", 
             "color": "magenta", 
             "level": logging.INFO
@@ -114,12 +114,12 @@ class RichLogger:
             "level": logging.INFO
         },
         "substep": {
-            "label": "SUB", 
+            "label": "SUBSTEP", 
             "color": "blue", 
             "level": logging.INFO
         },
         "info": {
-            "label": "STATUS", 
+            "label": "INFO", 
             "color": "blue", 
             "level": logging.INFO
         },
@@ -217,7 +217,7 @@ class RichLogger:
         that will catch all messages without filtering. Include the traceback
         to the most recent call when `verbose()` is called.
         """
-        rich_label = f"[{color}]{label:<8}[/]"
+        rich_label = f"[{color}]{label:<10}[/]"
 
         self.logger.log(
             level,
